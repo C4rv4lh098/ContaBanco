@@ -8,13 +8,20 @@ public class ContaTerminal {
 
         System.out.println("Por favor, digite o número da Conta!");
         int numero = scanner.nextInt();
-        System.out.println("Por favor, digite sua Agência!");
         scanner.nextLine();
+        System.out.println("Usuário: "+ numero+'\n');
+
+        System.out.println("Por favor, digite sua Agência!");
         String agencia = scanner.nextLine();
+        System.out.println("Usuário: "+ agencia+'\n');
+
         System.out.println("Por favor, digite seu nome!");
         String nomeCliente = scanner.nextLine().toUpperCase();
+        System.out.println("Usuário: "+ nomeCliente+'\n');
+
         System.out.println("Por favor, digite o saldo!");
         float saldo = scanner.nextFloat();
+        System.out.println("Usuário: "+ saldo+'\n');
 
         return new Conta(numero, agencia, nomeCliente, saldo);
     }
@@ -25,6 +32,7 @@ public class ContaTerminal {
                 + dados.agencia() + ", conta " + dados.numero() + " e seu saldo de " + dados.saldo() + " já está disponível para saque!");
 
          */
+
         System.out.printf("Olá "+ dados.nomeCliente()+ ", obrigado por criar sua conta em nosso banco!\n" +
                 "Agência: "+ dados.agencia()+ " | Conta: "+ dados.numero()+ "\n" +
                 "Saldo: "+ dados.saldo()+ " já está disponível para saque!");
