@@ -12,7 +12,7 @@ public class ContaTerminal {
         scanner.nextLine();
         String agencia = scanner.nextLine();
         System.out.println("Por favor, digite seu nome!");
-        String nomeCliente = scanner.nextLine();
+        String nomeCliente = scanner.nextLine().toUpperCase();
         System.out.println("Por favor, digite o saldo!");
         float saldo = scanner.nextFloat();
 
