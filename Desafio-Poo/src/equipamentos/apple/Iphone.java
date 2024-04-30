@@ -1,6 +1,6 @@
 package equipamentos.apple;
 
-import equipamentos.aparelhoTelefônico.AparelhoTelefonico;
+import equipamentos.aparelhoTelefonico.AparelhoTelefonico;
 import equipamentos.navegadorDeInternet.NavegadorDeInternet;
 import equipamentos.reprodutorMusical.ReprodutorMusical;
 

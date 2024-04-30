@@ -1,4 +1,4 @@
-package equipamentos.aparelhoTelefônico;
+package equipamentos.aparelhoTelefonico;
 
 public interface AparelhoTelefonico {
     public void ligar();

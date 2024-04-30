@@ -1,7 +1,7 @@
 package user;
 
-import equipamentos.aparelhoTelefônico.TelefoneFixo;
-import equipamentos.aparelhoTelefônico.TelefoneFixoSemFio;
+import equipamentos.aparelhoTelefonico.TelefoneFixo;
+import equipamentos.aparelhoTelefonico.TelefoneFixoSemFio;
 import equipamentos.apple.Iphone;
 import equipamentos.navegadorDeInternet.Chrome;
 import equipamentos.navegadorDeInternet.Opera;

@@ -1,4 +1,4 @@
-package equipamentos.aparelhoTelefônico;
+package equipamentos.aparelhoTelefonico;
 
 public class TelefoneFixo implements AparelhoTelefonico{
     @Override
