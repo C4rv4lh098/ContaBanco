@@ -1,6 +1,7 @@
 package entity.model.conta;
 
-import entity.model.user.Cliente;
+import entity.model.user.Banco;
+import entity.model.user.Pessoa;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,8 @@ public class ContaCorrente extends Conta{
 
     public ContaPoupanca poupanca;
 
-    public ContaCorrente(Cliente cliente, ContaPoupanca poupanca) {
-        super(cliente);
+    public ContaCorrente(Pessoa pessoa, ContaPoupanca poupanca) {
+        super(pessoa);
         this.poupanca = poupanca;
         super.numero = SEQUENCIAL++;
     }
@@ -28,6 +29,10 @@ public class ContaCorrente extends Conta{
     public void retirarPoupanca(double valor){
         this.poupanca.sacar(valor);
         depositar(valor);
+    }
+
+    public void adicionarPoupancaABanco(Banco banco){
+        banco.adicionarConta(this.poupanca);
     }
 
     @Override

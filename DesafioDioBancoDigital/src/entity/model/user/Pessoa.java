@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Cliente {
+public class Pessoa {
     private String cpf;
 
     private String nome;

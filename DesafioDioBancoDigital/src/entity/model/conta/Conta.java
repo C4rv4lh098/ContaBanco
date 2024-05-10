@@ -1,7 +1,8 @@
 package entity.model.conta;
 
 import entity.interfaces.IConta;
-import entity.model.user.Cliente;
+import entity.model.user.Banco;
+import entity.model.user.Pessoa;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import lombok.NoArgsConstructor;
 public abstract class Conta implements IConta {
     private static final int AGENCIA_PADRAO = 1;
 
-    protected Cliente cliente;
+    protected Pessoa pessoa;
 
     protected int agencia;
 
@@ -21,8 +22,8 @@ public abstract class Conta implements IConta {
 
     protected double saldo;
 
-    public Conta(Cliente cliente) {
-        this.cliente = cliente;
+    public Conta(Pessoa pessoa) {
+        this.pessoa = pessoa;
         this.agencia = AGENCIA_PADRAO;
     }
 
@@ -44,7 +45,7 @@ public abstract class Conta implements IConta {
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("Cliente: " + this.cliente.getNome());
+        System.out.println("Cliente: " + this.pessoa.getNome());
         System.out.println("Agência: " + this.agencia + " | Número: " + this.numero);
         System.out.println("Saldo: " + this.saldo);
         System.out.println("= = = = = = = = = = = = = = = = = = = = = =\n");
