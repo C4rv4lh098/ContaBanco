@@ -1,6 +1,9 @@
 # Santander Dev Week 2024
 Java RESTful API criada para a Santander Dev Week.
 
+### Repositório publicado
+https://github.com/C4rv4lh098/dio-api-santander-dev-week-2024
+
 ## Diagrama de Classes
 
 ```mermaid
